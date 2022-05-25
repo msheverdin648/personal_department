@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+  <div class="container">
+    <h1 class="mb-5 " style="text-align: center;">Отдел кадров</h1>
+    <div class="d-flex justify-content-between align-items-center mb-5">
+       <a href="{% url 'signup' %}" class="btn btn-primary ">Добавить пользователя</a>
+<!--        <form class="search d-flex flex-row align-items-center" action="{% url 'filter' %}" method="get">-->
+<!--            <select style="height: 38px; background-color: transparent; margin-right: 10px; boreder-radius: 5px;" name="choice">-->
+<!--              <option disabled selected>-->
+<!--                Фильтр/Поиск по:-->
+<!--              </option>-->
+<!--              <option value="name">Названию документа</option>-->
+<!--              <option value="user_fio">ФИО пользователя</option>-->
+<!--              <option value="number">Номеру документа</option>-->
+<!--            </select>-->
+<!--            <input name="q" style="height: 38px; border-radius: 5px; padding: 0 10px;">-->
+<!--            <button type="submit" class="btn btn-success ml-2">Поиск</button>-->
+<!--        </form>-->
+    </div>
+<!--    <table class="table">-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--              <th scope='col'>-->
+<!--                Номер документа-->
+<!--              </th>-->
+<!--              <th scope='col'>-->
+<!--                Название документа-->
+<!--              </th>-->
+<!--              <th scope='col'>-->
+<!--                Добавил-->
+<!--              </th>-->
+<!--              <th scope='col'>-->
+<!--                Файл-->
+<!--              </th>-->
+<!--              <th scope='col'>-->
+<!--                Дата добавления-->
+<!--              </th>-->
+<!--              <th scope='col'>-->
+<!--                Дата изменения-->
+<!--              </th>-->
+<!--              <th scope='col'>-->
+<!--              </th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--            {% for doc in documents %}-->
+<!--              <tr>-->
+<!--                <th scope="row">{{ doc.number }}</th>-->
+<!--                <td>{{ doc.name }}</td>-->
+<!--                <td>{{ doc.user.first_name }} {{ doc.user.last_name }}</td>-->
+<!--                <td><a href="{{ doc.file.url }}">файл</a> </td>-->
+<!--                <td>{{ doc.load_date }}</td>-->
+<!--                <td>{{ doc.change_date }}</td>-->
+<!--                <td>-->
+<!--                  <a class="btn btn-warning" href="{% url 'change' doc.pk %}">Изменить</a>-->
+<!--                  <a href="{% url 'delete' doc.pk  %}" class="btn btn-danger">Удалить</a>-->
+<!--                </td>-->
+<!--              </tr>-->
+<!--            {% endfor %}-->
+<!--        </tbody>-->
+<!--  </table>-->
+
+  </div>
+{% endblock body %}
